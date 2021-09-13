@@ -27,6 +27,8 @@ $(call inherit-product, vendor/realme/RMX2001/RMX2001-vendor.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_FLOS := true
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_RMX2001
 PRODUCT_DEVICE := RMX2001
@@ -42,3 +44,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="full_oppo6785-user 10 QP1A.190711.020 0b36b6c4f9b3bf3b release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
+
+BUILD_FINGERPRINT := google/barbet/barbet:11/RD2A.210905.002/7513089:user/release-keys
